@@ -6,13 +6,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    $stmt = $conn->prepare("SELECT * FROM admin WHERE username = :username");
-    $stmt->execute(['username' => $username]);
-    $admin = $stmt->fetch(PDO::FETCH_ASSOC);
-
-    if ($admin && password_verify($password, $admin['password'])) {
+    $stmt = $conn->prepare("SELECT * FROM admin WHERE username = :username AND password = :password");
+    $stmt->execute(['username' => $username, 'password'=>$password]);
+  
+    $admin = $stmt->fetch(mode: PDO::FETCH_ASSOC);
+   
+    if ($admin) {
         $_SESSION['admin_logged_in'] = true;
-        header('Location:admin/dashboard.php');
+        header('Location:dashboard.php');
         exit;
     } else {
         $error = "Invalid username or password.";

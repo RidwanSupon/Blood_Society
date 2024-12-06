@@ -1,17 +1,18 @@
 <?php
-session_start();
+session_start(); 
 require_once '../includes/db_connect.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    $stmt = $conn->prepare("SELECT * FROM users WHERE username = :username");
-    $stmt->execute(['username' => $username]);
+    $stmt = $conn->prepare("SELECT * FROM users WHERE username = :username AND password = :password");
+    $stmt->execute(['username' => $username, 'password'=>$password]);
     $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
-    if ($user && password_verify($password, $user['password'])) {
+    if ($user) {
         $_SESSION['user_logged_in'] = true;
+        $_SESSION['user_id'] =$user['id'];
         header('Location: user_dashboard.php');
         exit;
     } else {
