@@ -5,6 +5,7 @@ session_start();
  #   header('Location: login.php');
  #   exit;
 #}
+require_once '../includes/db_connect.php';
 ?>
 
 <!DOCTYPE html>

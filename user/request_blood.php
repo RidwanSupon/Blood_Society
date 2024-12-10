@@ -48,8 +48,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 p-6">
-    <form class="bg-white p-6 rounded shadow-md" method="POST">
+<body class="bg-gray-100 p-6 ">
+    <form class="max-w-3xl mx-auto bg-gray-100 md:p-6 mt-6 rounded-xl shadow-2xl" method="POST">
         <h2 class="text-2xl font-bold mb-4">Request Blood</h2>
         <?php if (isset($message)): ?>
             <p class="text-green-500 mb-2"><?php echo $message; ?></p>

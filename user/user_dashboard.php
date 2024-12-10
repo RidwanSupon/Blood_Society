@@ -1,10 +1,7 @@
 <!-- Placeholder content for user_dashboard.php -->
 <?php
 session_start();
-#if (!isset($_SESSION['user_logged_in'])) {
-#    header('Location: login.php');
- #   exit;
-#}
+require_once '../includes/db_connect.php';
 ?>
 
 <!DOCTYPE html>
@@ -36,6 +33,7 @@ session_start();
 
 
     <div class="grid grid-cols-1 gap-4 mt-6">
+        
         <a href="request_blood.php" class="btn btn-primary">Request Blood</a>
         <a href="logout.php" class="btn btn-error">Logout</a>
     </div>
