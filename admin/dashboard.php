@@ -28,7 +28,7 @@ require_once '../includes/db_connect.php';
     }
 </style>
 </head>
-<body class="bg-gray-100 container mx-auto mt-0 md:mt-6 ">
+<body class="max-w-5xl mx-auto bg-gray-100  mt-0 md:mt-6 ">
     <div class="p-6">
         <a href=""><img src="../logo.png" alt="" class="w-full md:w-56"></a>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
