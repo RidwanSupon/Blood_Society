@@ -57,6 +57,20 @@ CREATE TABLE `blood_donors` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
+-- Dumping data for table `blood_donors`
+--
+
+INSERT INTO `blood_donors` (`id`, `name`, `phone`, `donation_date`, `blood_group`, `address`) VALUES
+(6, 'Ridwanur Rahman', '01871032697', '2024-11-23', 'O+', 'Mirpur 2,Rupnagar'),
+(7, 'Rakib Hossain', '01848848484', '2024-11-15', 'O-', 'Mirpur 2,Rupnagar'),
+(8, 'Sajib hossain', '01871032697', '2024-11-08', 'A-', 'Mirpur 2,Rupnagar'),
+(9, 'Ridwanur Rahman', '01871032697', '2024-11-22', 'O+', 'Mirpur 2,Rupnagar'),
+(10, 'Ridwanur Rahman', '01871032697', '2024-11-26', 'O-', 'Mirpur 2,Rupnagar'),
+(11, 'Ridwanur Rahman', '01871032697', '2024-12-01', 'O+', 'Mirpur 2,Rupnagar'),
+(12, 'Sajib Ahmed', '01871032697', '2024-12-03', 'A-', 'Mirpur 2,Rupnagar'),
+(13, 'Anik Hasan', '01871032697', '2024-12-03', 'AB+', 'Mirpur 2,Rupnagar'),
+(14, 'Emran Hossen', '01871032697', '2024-12-03', 'O-', 'Mirpur 2,Rupnagar'),
+(15, 'Ridwanur Rahman', '01871032697', '2024-12-14', 'A+', 'Mirpur 2,Rupnagar');
 
 -- --------------------------------------------------------
 
