@@ -32,11 +32,11 @@ require_once '../includes/db_connect.php';
     <div class="p-6">
         <a href=""><img src="../logo.png" alt="" class="w-full md:w-56"></a>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-            <a href="register_blood.php" class="btn btn-primary h-auto md:h-20 text-xl md:text-2xl text-yellow-50">Register Blood</a>
-            <a href="b_segment.php" class="btn btn-secondary h-auto md:h-20 text-xl md:text-2xl text-yellow-50">View Blood List</a>
-            <a href="exchange_blood.php" class="btn btn-accent h-auto md:h-20 text-xl md:text-2xl text-yellow-50">Handle Exchanges</a>
-            <a href="available_blood.php" class="btn btn-warning h-auto md:h-20 text-xl md:text-2xl text-yellow-50">Check Stock</a>
-            <a href="admin_blood_requests.php" class="btn btn-warning h-auto md:h-20 text-xl md:text-2xl text-yellow-50">Blood Request</a>
+            <a href="register_blood.php" class="btn bg-red-500 hover:bg-red-600 h-auto md:h-20 text-xl md:text-2xl text-yellow-50">Register Blood</a>
+            <a href="b_segment.php" class="btn bg-gray-800 hover:bg-gray-700 h-auto md:h-20 text-xl md:text-2xl text-yellow-50">View Blood List</a>
+            <a href="exchange_blood.php" class="btn bg-gray-800 hover:bg-gray-700 h-auto md:h-20 text-xl md:text-2xl text-yellow-50">Handle Exchanges</a>
+            <a href="available_blood.php" class="btn bg-gray-800 hover:bg-gray-700 h-auto md:h-20 text-xl md:text-2xl text-yellow-50">Check Stock</a>
+            <a href="admin_blood_requests.php" class="btn bg-gray-800 hover:bg-gray-700 h-auto md:h-20 text-xl md:text-2xl text-yellow-50">Blood Request</a>
         </div>
         <div class="mt-6">
             <a href="logout.php" class="btn btn-error">Logout</a>

@@ -42,8 +42,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </style>
 </head>
 <body class="bg-gray-100 flex items-center justify-center h-screen">
+
     <form class="bg-white p-6 rounded shadow-md" method="POST">
-        <h2 class="text-2xl font-bold mb-4">User Login</h2>
+        <div class="flex flex-row items-center justify-between">
+            <a href=""><img src="../logo.png" alt="" class="w-full md:w-56 "></a>
+        <h2 class="text-2xl font-bold mb-4">User Login</h2></div>
         <?php if (isset($error)): ?>
             <p class="text-red-500 mb-2"><?php echo $error; ?></p>
         <?php endif; ?>

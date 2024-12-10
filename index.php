@@ -18,6 +18,18 @@ if (isset($_SESSION['admin_logged_in'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="assets/css/tailwind.css" rel="stylesheet">
     <title>Blood Bank Management System</title>
+      <!-- Font Awesome -->
+      <script src="https://kit.fontawesome.com/5ed21b9157.js" crossorigin="anonymous"></script>
+
+<!-- Daisy UI & Tailwind -->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+    .font-manrope {
+        font-family: 'Manrope', sans-serif;
+    }
+</style>
 </head>
 <body class="bg-gray-100 flex items-center justify-center h-screen">
     <div class="text-center">

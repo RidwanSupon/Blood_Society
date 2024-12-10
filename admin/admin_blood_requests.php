@@ -46,7 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['approve_request_id']))
 </style>
 
 </head>
-<body class="bg-gray-100 p-6">
+<body class="bg-gray-100 p-6 max-w-5xl mx-auto mt-5 rounded-lg shadow-xl">
     <div class="bg-white p-6 rounded shadow-md">
         <h2 class="text-2xl font-bold mb-4">Blood Requests</h2>
         <?php if (isset($message)): ?>
