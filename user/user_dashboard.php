@@ -40,7 +40,7 @@ require_once '../includes/db_connect.php';
     </div>
     <div class="flex flex-col md:flex-row justify-between items-center">
 
-        <a href="../admin/dashboard.php"><img src="../logo.png" alt="" class="w-full md:w-56 -ml-2"></a>
+        <a href="../user/user_dashboard.php"><img src="../logo.png" alt="" class="w-full md:w-56 -ml-2"></a>
         <h2 class="text-3xl font-bold">Stock Blood</h2>
     </div>
 

@@ -33,7 +33,7 @@ if (isset($_SESSION['admin_logged_in'])) {
 </head>
 <body class="bg-gray-100 flex items-center justify-center h-screen">
     <div class="text-center">
-        <h1 class="text-4xl font-bold mb-4">Welcome to Blood Bank Management System</h1>
+        <h1 class="text-4xl font-bold mb-4">Welcome to BUBT Blood Society</h1>
         <div class="mt-6">
             <a href="admin/login.php" class="btn btn-primary mx-2">Admin Login</a>
             <a href="user/login.php" class="btn btn-secondary mx-2">User Login</a>

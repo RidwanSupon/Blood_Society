@@ -50,7 +50,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </head>
 <body class="bg-gray-100 p-6 ">
     <form class="max-w-3xl mx-auto bg-gray-100 md:p-6 mt-6 rounded-xl shadow-2xl" method="POST">
-        <h2 class="text-2xl font-bold mb-4">Request Blood</h2>
+    <div class="flex flex-col md:flex-row justify-between items-center">
+
+<a href="../user/user_dashboard.php"><img src="../logo.png" alt="" class="w-full md:w-56 -ml-2"></a>
+<h2 class="text-3xl font-bold">Blood Request</h2>
+</div>
         <?php if (isset($message)): ?>
             <p class="text-green-500 mb-2"><?php echo $message; ?></p>
         <?php endif; ?>

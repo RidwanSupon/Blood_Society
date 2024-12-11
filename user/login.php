@@ -41,9 +41,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 </style>
 </head>
-<body class="bg-gray-100 flex items-center justify-center h-screen">
+<body class="max-w-3xl mx-auto flex items-center justify-center">
 
-    <form class="bg-white p-6 rounded shadow-md" method="POST">
+    <form class="bg-gray-100 p-6 rounded shadow-md mt-6" method="POST">
         <div class="flex flex-row items-center justify-between">
             <a href=""><img src="../logo.png" alt="" class="w-full md:w-56 "></a>
         <h2 class="text-2xl font-bold mb-4">User Login</h2></div>
@@ -53,6 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <input type="text" name="username" placeholder="Username" class="input input-bordered w-full mb-4" required>
         <input type="password" name="password" placeholder="Password" class="input input-bordered w-full mb-4" required>
         <button type="submit" class="btn btn-primary w-full">Login</button>
+        <button class="btn bg-orange-400 mt-3 w-auto"><a href="../index.php">Select Role</a></button>
     </form>
 </body>
 </html>
